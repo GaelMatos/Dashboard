@@ -301,3 +301,24 @@ header nav .mode .mode-switch.active::after{
 #lateral button:hover span{
     color: #ffffff;
 }
+
+
+.btn{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: #FFC107;
+    color: #455A64;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 200ms;
+}
+
+.btn:hover{
+    background-color: #455A64;
+    color: #FFC107;
+}
+
+.btn:last-child{
+    margin-left: 16px;
+}
