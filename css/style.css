@@ -242,7 +242,7 @@ header nav .mode .mode-switch.active::after{
 
 
 #lateral input,
- #lateral textare,
+ #lateral textarea,
  #lateral select{
     width: 100%;
     height: 46px;
@@ -252,7 +252,7 @@ header nav .mode .mode-switch.active::after{
     margin-bottom: 16px;
 }
 
-#lateral textare{
+#lateral textarea{
     padding-top: 10px;
     resize: none;
     height: 100px;

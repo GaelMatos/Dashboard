@@ -45,6 +45,9 @@ function listarproduto(){
 function addproduto(){
     event.preventDefault();
     let dados = {
+        produto: produto.value,
+        descricao: descricao.value,
+        imagem: imagem.value,
         categoria : categoria.value,
         status :1
     }
