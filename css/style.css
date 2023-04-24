@@ -241,12 +241,21 @@ header nav .mode .mode-switch.active::after{
 }
 
 
-#lateral input{
+#lateral input,
+ #lateral textare,
+ #lateral select{
     width: 100%;
     height: 46px;
     padding-left: 10px;
     border-radius: 5px;
     border: 2px solid #dedede;
+    margin-bottom: 16px;
+}
+
+#lateral textare{
+    padding-top: 10px;
+    resize: none;
+    height: 100px;
 }
 
 #lateral button{

@@ -4,11 +4,25 @@ function listarCategorias(){
     fetch('https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/categorias')
     .then (res => res.json())
     .then(lista =>{
+        lista.forEach( cat =>{
+            categoria.innerHTML += `<option>${cat.categoria}</option>`;
+
+        });
+    })    
+} listarCategorias();
+
+
+function listarproduto(){
+    fetch('https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/produtos')
+    .then (res => res.json())
+    .then(lista =>{
         tabela.DataTable({
             data: lista,
             columns : [
                 {data :'id', width :'50px'},
-                {data :'categoria'},
+                {data :'produto'},
+                {data :'preco', width : '100px'},
+                {data :'categoria', width : '150px'},
                 {data :'status',
                 width :'100px',
                 classNaame : 'dt-head-center dt-body-center',
@@ -26,9 +40,9 @@ function listarCategorias(){
             responsive: true
         })
     })
-} listarCategorias()
+} listarproduto()
 
-function addcategoria(){
+function addproduto(){
     event.preventDefault();
     let dados = {
         categoria : categoria.value,
@@ -49,7 +63,7 @@ function addcategoria(){
 
 }
 
-function deletarCategoria(idCategoria){
+function deletarproduto(idCategoria){
 
 
     fetch(`https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/categorias/${idCategoria}`,{
