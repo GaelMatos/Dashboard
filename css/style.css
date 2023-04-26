@@ -7,6 +7,17 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+.box{
+    background-color:#fff;
+    border-radius: 8px;
+    padding: 16px;
+
+
 }
 
 :root{
@@ -331,3 +342,19 @@ header nav .mode .mode-switch.active::after{
 .btn:last-child{
     margin-left: 16px;
 }
+
+#dashboard{
+    padding: 60px 120px 0 120px;
+}
+
+#dashboard .dados{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+#dashboard .dados li{
+    width: 25%;
+}
+
+

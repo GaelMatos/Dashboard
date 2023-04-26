@@ -1,6 +1,6 @@
 let tabela = $("#tabela");
 
-function listarCategorias(){
+function listarCategoria(){
     fetch('https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/categorias')
     .then (res => res.json())
     .then(lista =>{
@@ -26,7 +26,7 @@ function listarCategorias(){
             responsive: true
         })
     })
-} listarCategorias()
+} listarCategoria()
 
 function addcategoria(){
     event.preventDefault();
